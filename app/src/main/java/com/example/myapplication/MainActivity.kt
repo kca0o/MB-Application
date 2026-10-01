@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             count ++
             textView.text = "You clicked $count times!"
+            //test test
         }
     }
 }
