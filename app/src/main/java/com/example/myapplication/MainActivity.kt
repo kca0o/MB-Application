@@ -10,10 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnAdd: ImageButton = findViewById(R.id.btnAdd)
-        btnAdd.setOnClickListener {
-            val intent = Intent(this, NewRecipeAcitiity::class.java)
-            startActivity(intent)
+        println("Hello, Kotlin!")
+
+        val textView = findViewById<TextView>(R.id.textView)
+        val button = findViewById<Button>(R.id.button)
+
+        button.setOnClickListener {
+            count ++
+            textView.text = "You clicked $count times!"
+            //test test
         }
     }
 }
